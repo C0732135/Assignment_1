@@ -70,7 +70,13 @@ class CountrySide
             Hugi.FoundAstrilde = true;
         }
 
-        // TO DO: Complete this section to make the Recursion work           
+        // TO DO: Complete this section to make the Recursion work       
+        else
+        {
+            Console.WriteLine("I didn't find astrildge in {0}", CurrentVillage.VillageName);
+            Console.WriteLine("I've walked {0}", Hugi.CalculateDistanceWalked());
+            Hugi.FoundAstrilde = false;
+        }
 
 
     }
